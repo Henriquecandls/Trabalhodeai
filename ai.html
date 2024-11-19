@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promove a Minha Terra - Funchal</title>
+    <style>
+       
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #020024, #090979, #00d4ff);
+            color: white;
+            overflow-x: hidden;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 20px 0;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+        h1, h2, p {
+            margin: 0;
+        }
+        h1 {
+            font-size: 3.5em;
+            font-weight: bold;
+            color: #00d4ff;
+            text-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+        }
+        h2 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            color: #fff;
+            text-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            margin: 20px 0;
+        }
+
+     
+        header {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(120deg, #020024, #090979);
+            position: relative;
+            overflow: hidden;
+        }
+        header::after {
+            content: "";
+            position: absolute;
+            top: -50px;
+            left: -50px;
+            width: 120%;
+            height: 120%;
+            background: radial-gradient(circle, rgba(0, 212, 255, 0.5) 0%, transparent 70%);
+            animation: float-bg 10s linear infinite;
+        }
+        header p {
+            font-size: 1.5em;
+            color: #ddd;
+        }
+        @keyframes float-bg {
+            0% { transform: translate(0, 0); }
+            50% { transform: translate(50px, 50px); }
+            100% { transform: translate(0, 0); }
+        }
+
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px 20px;
+            margin: 0 15px;
+            border: 2px solid transparent;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            background: white;
+            color: #090979;
+            border: 2px solid #00d4ff;
+        }
+
+     
+        section {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        section img {
+            transform: scale(1);
+            transition: transform 0.5s ease;
+        }
+        section img:hover {
+            transform: scale(1.05);
+        }
+        .image-caption {
+            font-size: 1em;
+            color: #bbb;
+            margin-top: 5px;
+        }
+        .animated-title {
+            display: inline-block;
+            background: linear-gradient(to right, #00d4ff, #090979);
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: slide-bg 4s infinite linear;
+        }
+        @keyframes slide-bg {
+            0% { background-position: 0%; }
+            100% { background-position: 100%; }
+        }
+
+       
+        footer {
+            background: linear-gradient(120deg, #090979, #020024);
+            color: #ddd;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 0.9em;
+        }
+
+        
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 20px 0;
+            background: #00d4ff;
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            border: none;
+            border-radius: 50px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background: white;
+            color: #090979;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+            transform: translateY(-3px);
+        }
+
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+            nav a {
+                font-size: 1em;
+                margin: 0 10px;
+            }
+            h2 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Funchal - <span class="animated-title">Uma Terra Única</span></h1>
+        <p>Descubra a beleza natural, as tradições vibrantes e a gastronomia irresistível.</p>
+        <img src="funchal.png" alt="Paisagem  do Funchal">
+        <div class="image-caption">Paisagem  do Funchal</div>
+    </header>
+
+    <nav>
+        <a href="#caracteristicas-naturais">Características Naturais</a>
+        <a href="#principais-atracoes">Principais Atrações</a>
+        <a href="#gastronomia">Gastronomia</a>
+        <a href="#tradicoes">Tradições</a>
+    </nav>
+
+    <section id="caracteristicas-naturais">
+        <h2>Características Naturais</h2>
+        <p>Com um clima subtropical e paisagens de cortar a respiração, o Funchal é uma joia no Atlântico.</p>
+        <img src="temperatura.png" alt="Clima ameno do Funchal">
+        <div class="image-caption">Clima ameno</div>
+    </section>
+
+    <section id="principais-atracoes">
+        <h2>Principais Atrações</h2>
+        <p>Explore jardins exuberantes, mercados históricos e vistas panorâmicas deslumbrantes.</p>
+        <img src="miradouro.png" alt="Miradouro do Pico dos Barcelos">
+        <div class="image-caption">Miradouro do Pico dos Barcelos</div>
+        <img src="Forte se S. Tiago.png" alt="Forte se S. Tiago">
+        <div class="image-caption">Forte se S. Tiago</div>
+        <img src="montepalace.png" alt="Monte Palace Jardim Tropical">
+        <div class="image-caption">Monte Palace Jardim Tropical</div>
+        <img src="jardim.png" alt="Jardins Botânicos">
+        <div class="image-caption">Jardins Botânicos</div>
+        
+    </section>
+
+    <section id="gastronomia">
+        <h2>Gastronomia</h2>
+        <p>Saboreie especialidades como a espetada madeirense, bolo do caco e a famosa poncha,lapas entre outras.</p>
+        <img src="bolodocaco.png" alt="Bolo do Caco">
+        <div class="image-caption">Bolo do Caco</div>
+        <img src="comida.png" alt="Marisco">
+        <div class="image-caption">Marisco</div>
+        <img src="espetada.png" alt="Espetada Madeirense">
+        <div class="image-caption">Espetada Madeirense</div>
+    </section>
+
+    <section id="tradicoes">
+        <h2>Tradições</h2>
+        <p>Participe em festas icónicas como a Festa da Flor, o fogo-de-artifício de Ano Novo e muito mais.</p>
+        <img src="tradicoes1.jpg" alt="Noite do Mercado do Funchal">
+        <div class="image-caption">Noite do Mercado do Funchal</div>
+        <img src="fimdoano.png" alt="Fogo de Ano Novo no Funchal">
+        <div class="image-caption">Fogo de Ano Novo </div>
+        <img src="festadaflor.png" alt="Desfile da festa da flor">
+        <div class="image-caption">Desfile da festa da flor</div>
+        <img src="Cortejo Alegórico e tapetes florais.png" alt="Cortejo Alegórico e tapetes florais">
+        <div class="image-caption">Cortejo Alegórico e tapetes florais</div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Promove a Minha Terra - Funchal,Henrique Todos os direitos reservados.</p>
+   
